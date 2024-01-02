@@ -6,22 +6,26 @@ function About() {
     // title about
     // about me
     <>
-      <Typography variant="h4" sx={{ my: 2, textAlign: "center", color: "white"}}>
-        About Me
+      <Typography
+        variant="h4"
+        sx={{ my: 2, textAlign: "center", color: "white" }}
+      >
+        About
       </Typography>
       <Box
         sx={{
-          textAlign: "center",
-          color: "white",
-          bgcolor: "black",
-          height: "100vh",
-          width: "50%",
+          display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
+          justifyContent: "center",
+          flexWrap: "wrap",
+          px: 3,
         }}
       >
-        <Typography variant="h6" sx={{ my: 2 }}>
-          AbdulAziz Al-Dalaan
+        <Typography>
+          My name is AbdulAziz Al-Dalaan, but for sort you can call me Aziz. I am a recent gradutate from Washington State University with a B.S in Computer Science
         </Typography>
       </Box>
+    
     </>
   );
 }

@@ -5,8 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Full Portfolio is Coming Soon
+        <p className='neon-text'>
+          Progress Over Perfection
         </p>
         <CircularProgress color="secondary" />
       </header>
