@@ -1,9 +1,10 @@
 import './App.css';
 import { CircularProgress } from '@mui/material';
 
+
 function App() {
   return (
-    <div className="App">
+    <div className="App" id='Home'>
       <header className="App-header">
         <p className='neon-text'>
           Progress Over Perfection

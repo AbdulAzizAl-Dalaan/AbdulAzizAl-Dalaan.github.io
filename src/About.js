@@ -1,12 +1,13 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import "./Component.css"
 
 function About() {
   return (
     // title about
     // about me
-    <>
-      <Typography
+    <div className="Viewpoint" id='About'>
+        <Typography
         variant="h4"
         sx={{ my: 2, textAlign: "center", color: "white" }}
       >
@@ -25,8 +26,7 @@ function About() {
           My name is AbdulAziz Al-Dalaan, but for sort you can call me Aziz. I am a recent gradutate from Washington State University with a B.S in Computer Science
         </Typography>
       </Box>
-    
-    </>
+    </div>
   );
 }
 

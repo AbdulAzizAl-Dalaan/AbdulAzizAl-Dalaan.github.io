@@ -9,11 +9,11 @@ import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from 'react-scroll';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -47,14 +47,26 @@ function DrawerAppBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+  {navItems.map((item) => (
+    <ListItem key={item} disablePadding>
+      <ListItemButton sx={{ 
+        display: 'flex', 
+        justifyContent: 'center', // Centers horizontally in the flex container
+        width: '100%' // Ensures the button takes the full width of the container
+      }}>
+        <Link to={item} smooth duration={500} offset={-75} 
+          style={{ 
+            width: '100%', // Takes full width of the parent (ListItemButton)
+            textAlign: 'center' // Centers the text within the Link
+          }}
+        >
+          {item}
+        </Link>
+      </ListItemButton>
+    </ListItem>
+  ))}
+</List>
+
     </Box>
   );
 
@@ -85,7 +97,7 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+                <Link to={item} smooth duration={500} offset={-75}>{item}</Link>
               </Button>
             ))}
           </Box>

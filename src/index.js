@@ -5,6 +5,7 @@ import App from './App';
 import DrawerAppBar from './Navbar';
 import About from './About';
 import Projects from './Projects';
+import Contact from './Contact'
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -18,7 +19,7 @@ root.render(
     <App />
     <About />
     <Projects />
-    
+    <Contact />
   </React.StrictMode>
 );
 

@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
-import "./App.css"
+import "./Component.css"
 
 const projectTitles = [
   "H2F-APP",
@@ -40,8 +40,9 @@ const projectLinks = [
 ];
 
 function Projects() {
+
   return (
-    <>
+    <div className="Viewpoint" id="Projects">
       <Typography
         variant="h4"
         sx={{ my: 2, textAlign: "center", color: "white" }}
@@ -66,6 +67,7 @@ function Projects() {
               color: "white",
             }}
           >
+            
             <CardMedia
               component="img"
               alt={item}
@@ -104,7 +106,7 @@ function Projects() {
           </Card>
         ))}
       </Box>
-    </>
+    </div>
   );
 }
 export default Projects;
