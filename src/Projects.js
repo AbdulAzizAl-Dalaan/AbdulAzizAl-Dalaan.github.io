@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import h2f_img from './images/h2f.png'
+import quiz_img from './images/qf.png'
 import ext2_img from './images/linux.png'
 import nfl_img from './images/nfl.png'
 import crap_img from './images/wsu.png'
@@ -22,18 +23,18 @@ const projectTitles = [
 
 const projectImages = [
   h2f_img,
-  '',
+  quiz_img,
   ext2_img,
   nfl_img,
   crap_img
 ]
 
 const projectDescriptions = [
-  "Winner of 3rd Place in WSUs EECS Capstone Competition. An application designed for the Army National Guard to help improve the time, accuracy, and effectiveness of their Periodic Health Assessment in the form of a multi-page web application.",
-  "QuizFeed is a web application that allows users to create and take quizzes. The application is built using React and Firebase.",
-  "Linux EXT2 File System is a C program that allows users to create, read, and write to a virtual file system. The program is built using C and the FUSE library.",
-  "NFL-Prediction-Alogrithm is a Python program that uses machine learning to predict the outcome of NFL games. The program uses the scikit-learn library to train and test the model.",
-  "",
+  "Winner of 3rd Place in WSUs EECS Capstone Competition. A Full-Stack Javascript Application designed for the Army National Guard to help improve the time, accuracy, and effectiveness of their Periodic Health Assessment in the form of a multi-page web application.",
+  "A Full-Stack Javascript Application where users can create an account, then login and create quizzes which they could then share with all other users present on the application. They can also add friends which they could further message within the application.",
+  "A program created entirely within C to represent a fully Linux-compatible ext2 file system, The program is intended to mimic basic Linux Functions such as ls, cd, pwd, and more. Functions are divided into three deliverables levels accordingly based on complexity.",
+  "A Python program which analyzes NFL data from 2012-2021 to which statistics account for the top win percentage teams using t-SNE and Random Forests Classifiers. The program utilizes the ELO rating system to predict the 2022 season outcome based on feedback from the decade analysis.",
+  "A multi-page web application built with a Flask framework stack where graduate student users could apply to research positions created and posted by Professor users. Students are able to base information about their experiences for Professors to analyze applicants.",
 ];
 
 const projectIcons = [

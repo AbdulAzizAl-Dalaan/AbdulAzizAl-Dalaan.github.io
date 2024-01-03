@@ -11,7 +11,7 @@ function About() {
         variant="h4"
         sx={{ my: 2, textAlign: "center", color: "white" }}
       >
-        About
+        About Me
       </Typography>
       <Box
         sx={{
@@ -23,7 +23,7 @@ function About() {
         }}
       >
         <Typography>
-          My name is AbdulAziz Al-Dalaan, but for sort you can call me Aziz. I am a recent gradutate from Washington State University with a B.S in Computer Science
+          My name is AbdulAziz Al-Dalaan, but for sort you can call me Aziz. I am a recent gradutate from Washington State University with a BSc in Computer Science
         </Typography>
       </Box>
     </div>
