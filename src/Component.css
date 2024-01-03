@@ -4,5 +4,32 @@
 }
 
 .Viewpoint-Projects {
-    min-height: 100vh;
+  background-image: url('./images/projects.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  filter: blur(5px); /* Adjust the pixel value as needed */
+}
+
+
+.backgroundImage {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.backgroundImage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('./images/projects.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  z-index: -1;
 }

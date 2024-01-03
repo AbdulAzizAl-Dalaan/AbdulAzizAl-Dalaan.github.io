@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
+
 import h2f_img from './images/h2f.png'
 import quiz_img from './images/qf.png'
 import ext2_img from './images/linux.png'
@@ -73,13 +74,14 @@ function Projects() {
           pt: 8,
         }}
       >
-        {projectTitles.map((item, index) => (
+        {projectTitles.map((item, index) => (  
           <Card
             sx={{
               width: { xs: "100%", sm: "30%" },
               margin: 2,
               backgroundColor: "grey.900",
               color: "white",
+              boxShadow: '10px 5px 5px black'
             }}
           >
             
@@ -123,6 +125,7 @@ function Projects() {
               </CardActions>
             </Box>
           </Card>
+          
         ))}
       </Box>
     </div>
