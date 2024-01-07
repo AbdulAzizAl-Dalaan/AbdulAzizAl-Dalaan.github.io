@@ -59,8 +59,8 @@ function Projects() {
   return (
     <div className="Viewpoint" id="Projects">
       <Typography
-        variant="h1"
-        sx={{ my: 2, textAlign: "center", color: "white" }}
+        variant="h4"
+        sx={{ my: 2, textAlign: "center", color: "white", fontSize: 'h2.fontSize' }}
       >
         Projects
       </Typography>

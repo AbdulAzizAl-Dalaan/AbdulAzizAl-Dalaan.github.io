@@ -54,13 +54,14 @@
 }
 
 .icon-container {
-  display: inline-block; /* This makes the padding part of the clickable area */
-  padding: 10px; /* Adjust padding as needed to create the invisible box */
-  cursor: pointer; /* Optional: Changes the cursor to indicate it's clickable */
-  color: white; /* Default color */
-  transition: color 0.3s; /* Smooth transition for the color change */
+  display: inline-block; 
+  padding: 10px; 
+  cursor: pointer; 
+  color: white; 
+  transition: color 0.3s;
+  
 }
 
 .icon-container:hover {
-  color: #404040; /* Color on hover */
+  color: #404040; 
 }

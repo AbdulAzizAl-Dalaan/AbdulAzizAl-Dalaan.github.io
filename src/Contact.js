@@ -7,14 +7,12 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import {
-  faXTwitter,
   faLinkedinIn,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-const myContactIcons = [faXTwitter, faLinkedinIn, faGithub, faEnvelope];
+const myContactIcons = [ faLinkedinIn, faGithub, faEnvelope];
 const myContactLinks = [
-  "https://twitter.com/aziz_aldalaan",
   "https://www.linkedin.com/in/abdulaziz-al-dalaan/",
   "https://github.com/AbdulAzizAl-Dalaan",
   "mailto:abdul.aldalaan@gmail.com",
@@ -60,31 +58,40 @@ function Contact() {
           sm={6}
           sx={{
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <Typography
-            variant="h4"
-            sx={{
-              fontSize: matches ? "h2.fontSize" : "h3.fontSize",
-              textAlign: "center",
-            }}
-          >
+          <Box sx={{ textAlign: "center" }}>
             {myContactIcons.map((myicon, index) => (
               <Link
+                key={index}
                 href={myContactLinks[index]}
                 color={"inherit"}
                 target="_blank"
                 rel="noreferrer"
-                sx={{ pl: 7 }}
+                sx={{ px: 2, fontSize: 50 }}
               >
                 <div className="icon-container">
                   <FontAwesomeIcon icon={myicon} />
                 </div>
               </Link>
             ))}
-          </Typography>
+          </Box>
+          <Box sx={{ mt: 3 }}>
+            <Link
+              href="https://abdulazizal-dalaan.github.io/AbdulAziz-Resume.pdf"
+              color={"inherit"}
+              target="_blank"
+              rel="noreferrer"
+              sx={{ fontSize: 25}}
+            >
+                <div className="icon-container" style={{ textDecoration: 'underline'}}>
+                  View Resume
+                </div>
+            </Link>
+          </Box>
         </Grid>
       </Grid>
     </div>

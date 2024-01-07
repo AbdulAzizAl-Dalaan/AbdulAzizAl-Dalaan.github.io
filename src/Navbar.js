@@ -52,7 +52,7 @@ function DrawerAppBar(props) {
               to={item} 
               smooth 
               duration={500} 
-              offset={-75}
+              offset={-55}
               style={{ textDecoration: 'none', color: 'inherit', width: '100%', display: 'flex', justifyContent: 'center' }}
             >
               <ListItemButton sx={{ justifyContent: 'center', width: '100%' }}> 
@@ -108,7 +108,7 @@ function DrawerAppBar(props) {
                   to={item}
                   smooth
                   duration={500}
-                  offset={-75}
+                  offset={-60}
                   style={{ textDecoration: "none" }} // Removes underline from links
                 >
                   <Button sx={{ color: "#fff" }}>
