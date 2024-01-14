@@ -85,11 +85,10 @@ function About() {
                   textAlign: "left",
                 }}
               >
-                My name is Aziz. I am a recent graduate from Washington State
-                University with a BSc in Computer Science. My hobbies include
-                Gaming on just about all platforms, Daily Running, and Watching
-                Movies/Shows. I am currently looking for a job in the Software
-                Development Field.
+                My name is Aziz. I am a graduate from Washington State
+                University with a Bachelor of Science in Computer Science. My hobbies include
+                gaming on just about all platforms, running, and watching
+                movies/shows. I am currently looking for a job in the software.
               </Typography>
             </CardContent>
           </Card>

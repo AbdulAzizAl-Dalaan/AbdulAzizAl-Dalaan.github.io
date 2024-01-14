@@ -1,5 +1,4 @@
 import './App.css';
-import { CircularProgress } from '@mui/material';
 
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
         <p className='neon-text'>
           Progress Over Perfection
         </p>
-        <CircularProgress color="secondary" />
       </header>
     </div>
   );
