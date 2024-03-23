@@ -88,7 +88,7 @@ function About() {
                 My name is Aziz. I am a graduate from Washington State
                 University with a Bachelor of Science in Computer Science. My hobbies include
                 gaming on just about all platforms, running, and watching
-                movies/shows. I am currently looking for a job in the software.
+                movies/shows. I am currently looking for a job in Software Development.
               </Typography>
             </CardContent>
           </Card>
